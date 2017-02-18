@@ -32,7 +32,7 @@ function startApp(){
     output: process.stdout
   });
   rl.on('line', (line) => {
-    let city = line;
+    let city = line.toLowerCase();
     console.log( statesContainingCity[city] || 'Not a city' );
   });
 }
